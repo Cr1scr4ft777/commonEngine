@@ -1,0 +1,67 @@
+# Compilación
+*.obj
+*.o
+*.lo
+*.slo
+*.ilk
+*.meta
+*.pdb
+*.idb
+*.exp
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.log
+
+# Visual Studio files
+.vs/
+*.vcxproj*
+*.sln
+*.suo
+*.ncb
+*.user
+*.cache
+*.aps
+*.db
+*.opendb
+*.VC.db
+*.VC.opendb
+
+# Archivos de precompilación
+*.pch
+*.gch
+
+# Archivos temporales
+*.tmp
+*.bak
+*.swp
+*~
+
+# Carpeta de salida
+/bin/
+/build/
+/dist/
+/Debug/
+/Release/
+/x64/
+/x86/
+
+# Archivos de CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de configuración personal
+*.code-workspace
+.idea/
+*.vscode/
