@@ -1,7 +1,7 @@
 #include "String.h"
 #include "CommonEnginePCH.h"
 
-namespace CommonEngine{
+namespace commonengine{
 	std::vector<String> SplitString(const String& string, const String& delimiters) {
 		std::vector<String> result;
 		size_t start = 0;

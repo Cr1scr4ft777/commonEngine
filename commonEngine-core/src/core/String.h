@@ -4,7 +4,7 @@
 
 
 
-namespace CommonEngine {
+namespace commonengine {
 	using String = std::string;
 
 	class COMMON_API StringFormat {
