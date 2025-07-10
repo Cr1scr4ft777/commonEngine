@@ -51,7 +51,7 @@ Actualmente el proyecto está pensado para **Visual Studio 2022** con C++17 (o s
 
 1. [x] Sistema de eventos base
 2. [ ] Eventos concretos (`KeyPressed`, `MouseMoved`, etc.)
-3. [ ] Dispatcher de eventos
+3. [x] Dispatcher de eventos
 4. [ ] Sistema de ventanas multiplataforma
 5. [ ] Renderizado básico (OpenGL / Vulkan)
 6. [ ] Motor de juego (escenas, entidades)
