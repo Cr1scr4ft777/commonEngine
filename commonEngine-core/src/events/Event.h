@@ -26,8 +26,7 @@ namespace commonengine {namespace events {
 					ApplicationCategory = BIT(0),
 					InputCategory = BIT(1),
 					KeyboardCategory = BIT(2),
-					MouseCategory = BIT(3),
-					MouseButtonCategory = BIT(4)
+					MouseCategory = BIT(3)
 				};
 			protected:
 				bool m_Handled;
@@ -47,13 +46,13 @@ namespace commonengine {namespace events {
 				}
 
 				virtual ~Event() = default;
-		};
-#define EVENT_CLASS_TYPE(type) \
-	static Event::Type GetStaticType() { return Event::Type::type; } \
-	virtual Event::Type GetEventType() const override { return GetStaticType(); } \
-	virtual const char* GetName() const override { return #type; }
+			#define EVENT_CLASS_TYPE(type) \
+				static Type GetStaticType() { return Type::type; } \
+				virtual Type GetEventType() const override { return GetStaticType(); } \
+				virtual const char* GetName() const override { return #type; }
 
-#define EVENT_CLASS_CATEGORY(category) \
-	virtual int GetCategoryFlags() const override { return category; }
+			#define EVENT_CLASS_CATEGORY(category) \
+				virtual int GetCategoryFlags() const override { return category; }
+		};
 
 }}

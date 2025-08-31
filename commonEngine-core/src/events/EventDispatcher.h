@@ -23,13 +23,7 @@ namespace commonengine { namespace events {
 		/// <param name="func"></param>
 		/// <returns></returns>
 		template<typename T, typename F>
-		bool Dispatch(F&& func) {
-			if (m_Event.GetTypeEvent() == T::GetStaticType()) {
-				m_Event.m_Handled = func(static_cast<T&>(m_Event));
-				return true;
-			}
-			return false;
-		}
+		bool Dispatch(F&& func);
 	};
 
 }}

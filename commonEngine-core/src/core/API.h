@@ -11,7 +11,7 @@
 	#if defined(COMMON_BUILD_SO)
 		#define COMMON_API __attribute__((visibility("default")))
 	#else
-		#define COMMO_API
+		#define COMMON_API
 	#endif
 #else
 	#define COMMON_API
